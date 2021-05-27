@@ -1,0 +1,462 @@
+/*--------------------------------*/
+/* 14.Home page 2
+/*--------------------------------*/
+
+.intro-area-2 .layer-1-2 h1 {
+  margin: 20px auto;
+}
+.intro-area-2 .layer-1-1 p {
+  margin: 0px auto 30px;
+}
+.header-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+}
+.topbar-area-2 {
+  background: rgba(17, 17, 17, 0.5);
+}
+.header-area-2 {
+  background: rgba(17, 17, 17, 0.5);
+  box-shadow: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.topbar-area-2 .topbar-left ul li a {
+  color: #fff;
+}
+.header-area-2 .main-menu ul.navbar-nav li a {
+  color: #fff;
+}
+.header-area-2 .main-menu ul.navbar-nav li a:hover {
+  color: #fd5f16;
+}
+.intro-area-2 .slider-content {
+  margin-top: -100px;
+}
+.header-area-2.stick {
+  background: #111;
+}
+.footer-area.footer-area-2 {
+  background: #f5f5f5;
+}
+.footer-area-2 .footer-tags li a {
+  border: 1px solid #222;
+  background: #222;
+}
+.marker-list li {
+  color: #444;
+  padding-left: 30px;
+  margin: 10px 0px;
+  position: relative;
+}
+.marker-list li::after {
+  position: absolute;
+  content: "\e87f";
+  left: 0;
+  top: 3px;
+  font-family: tionscal;
+  color: #fd5f16;
+  font-weight: 700;
+}
+.video-text h4 {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.6px;
+}
+.services-all {
+  margin-top: -30px;
+}
+.services-all .single-services {
+  margin-top: 30px;
+}
+/*----------------------------------------*/
+/*  15.Overview  Area
+/*----------------------------------------*/
+.overview-area {
+  background: rgba(0, 0, 0, 0) url(../../../assets/img/background/bg1.jpg)
+    no-repeat scroll center center / cover;
+}
+.parallax-bg {
+  position: relative;
+}
+.overview-area.parallax-bg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #002c57;
+  opacity: 0.8;
+  content: "";
+}
+.overview-area .col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.main-view {
+  padding-bottom: 15px;
+}
+.main-view:last-child {
+  padding-bottom: 0px;
+}
+.company-content {
+  background: #f9f9f9;
+  padding: 12% 16%;
+}
+.view-images {
+  float: left;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fd5f16;
+}
+.view-content {
+  padding-left: 80px;
+}
+.main-view:last-child p {
+  margin-bottom: 0px;
+}
+.view-content h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.client-details {
+  padding: 12% 16%;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}
+.client-head {
+  text-align: left;
+  margin-left: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.client-head::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 80px;
+  background: #fd5f16;
+  left: 0;
+  top: 0px;
+}
+.client-head h3 {
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.client-head p {
+  color: #fff;
+}
+.single-client {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.single-client a {
+  display: inline-block;
+  opacity: 0.9;
+  transition: 0.4s;
+  border: 1px solid #fff;
+  background: #fff;
+}
+.single-client a:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+.footer-area-2 .footer-head p,
+.footer-area-2 .footer-head h4 {
+  color: #444;
+}
+.footer-area-2 .footer-icons ul li a {
+  color: #fd5f16;
+  border: 1px solid #fd5f16;
+}
+.footer-area-2 .footer-icons ul li a:hover {
+  color: #fff;
+}
+.footer-area-2 .footer-list li a {
+  color: #444;
+}
+.footer-area-2 .footer-list li a:hover {
+  color: #fd5f16;
+}
+.well-inner .well-services {
+  margin-top: 30px;
+}
+.well-inner {
+  margin-top: -30px;
+}
+.video-text h4 {
+  font-size: 24px;
+}
+/*--------------------------------*/
+/* 16. Home page 3
+/*--------------------------------*/
+.header-area-3 .logo-bg {
+  background: #fd5f16;
+  z-index: 10;
+  margin-left: 15px;
+}
+.header-area-3 .menu-bg {
+  position: relative;
+  margin-left: -30px;
+  margin-right: -15px;
+  background: rgba(17, 17, 17, 0.5);
+}
+.header-area-3 {
+  background: transparent;
+}
+.header-area-3 .logo-bg:before {
+  display: none;
+}
+.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev,
+.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
+  color: #fff;
+  font-size: 18px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  line-height: 39px;
+  opacity: 0;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+}
+.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev {
+  left: 10%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.project-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
+  right: 10%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.project-carousel.owl-carousel.owl-theme:hover
+  .owl-controls
+  .owl-nav
+  div.owl-next {
+  right: 1%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.project-carousel.owl-carousel.owl-theme:hover
+  .owl-controls
+  .owl-nav
+  div.owl-prev {
+  left: 1%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.project-carousel.owl-carousel.owl-theme:hover
+  .owl-controls
+  .owl-nav
+  div.owl-next:hover,
+.project-carousel.owl-carousel.owl-theme:hover
+  .owl-controls
+  .owl-nav
+  div.owl-prev:hover {
+  color: #fff;
+  background: #fd5f16;
+  border: 1px solid #fd5f16;
+}
+.project-carousel .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/*----------------------------------------*/
+/*  17. team  Area
+/*----------------------------------------*/
+.team-area {
+  position: relative;
+}
+.team-member,
+page-team-member {
+  margin-top: -30px;
+}
+.single-member {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.team-content {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 44, 87, 0.9) none repeat scroll 0 0;
+  padding: 22px 20px;
+  transition: 0.5s;
+}
+.team-share {
+  opacity: 0;
+}
+.single-member:hover .team-content {
+  transition: 0.5s;
+  top: 0px;
+  padding: 50px 20px;
+  background: rgba(0, 44, 87, 0.99) none repeat scroll 0 0;
+}
+.single-member:hover .team-share {
+  opacity: 1;
+}
+.team-title h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.team-title h6 {
+  color: #fd5f16;
+}
+.team-share p {
+  color: #fff;
+  letter-spacing: 1px;
+}
+.social-icon li {
+  display: inline-block;
+}
+.social-icon li a {
+  color: #fff;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+.social-icon li a:hover {
+  color: #fd5f16;
+}
+.team-content .social-icon {
+  margin-top: 15px;
+}
+.footer-area-3,
+.footer-bottom-3 {
+  background: #111;
+}
+/*--------------------------------*/
+/* 18.Home page 4
+/*--------------------------------*/
+.intro-area-4 .layer-1-2 h1 {
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: capitalize;
+  max-width: 800px;
+  font-weight: 600;
+}
+.welcome-area-2 .well-services {
+  position: relative;
+  transition: 0.4s;
+}
+.welcome-area-2 .well-services:hover {
+  background: #fd5f16;
+  transition: 0.4s;
+}
+.welcome-area-2 .well-services:hover .well-icon a,
+.welcome-area-2 .well-services:hover .well-content p,
+.welcome-area-2 .well-services:hover .well-content h4 a {
+  color: #fff;
+}
+.project-content-4 .single-awesome-project {
+  margin-top: 0px;
+}
+.project-content-4 .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.project-content-4 {
+  margin-top: 0px;
+}
+/*----------------------------------------
+  19.Home 4 Quote Area
+----------------------------------------*/
+.quote-area {
+  background: #002c57;
+  height: auto;
+  width: 100%;
+}
+.quote-area #contactForm input {
+  border: none;
+  border-radius: 0;
+  height: 46px;
+  margin-bottom: 20px;
+}
+.quote-area #contactForm input.last-part {
+  margin-bottom: 0px;
+}
+.quote-area .contact-form textarea#message {
+  height: 116px;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 20px;
+}
+.quote-area .quote-btn {
+  background: #fd5f16;
+  border: 1px solid #fd5f16;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+.quote-area .quote-btn:hover {
+  background: #fff;
+  color: #fd5f16;
+}
+.quote-area .help-block.last-part {
+  margin: 0px;
+}
+.sub-head h4 {
+  position: relative;
+  color: #fff;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.sub-head h4::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 10px;
+  width: 50px;
+  height: 2px;
+  background: #fd5f16;
+}
+.sub-head p {
+  color: #fff;
+}
+/*--------------------------------*/
+/* 20.Home page 5
+/*--------------------------------*/
+.topbar-area-5 {
+  background: transparent;
+}
+.header-area-5 {
+  background: transparent;
+}
