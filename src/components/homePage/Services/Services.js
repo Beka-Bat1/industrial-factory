@@ -26,13 +26,13 @@ function Services() {
           <div class="row">
             <div class="services-all">
               {/* <!-- single-well end--> */}
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-services text-center">
                   <div class="services-img">
                     <img src={s1} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i class="flaticon-gear-3"></i>
+                        <i class="flaticon-brick"></i>
                       </a>
                     </div>
                   </div>
@@ -50,13 +50,13 @@ function Services() {
                 </div>
               </div>
               {/* <!-- single-well end--> */}
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-services text-center">
                   <div class="services-img">
                     <img src={s2} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i class="flaticon-industrial-robot"></i>
+                        <i class="flaticon-brick"></i>
                       </a>
                     </div>
                   </div>
@@ -74,13 +74,13 @@ function Services() {
                 </div>
               </div>
               {/* <!-- single-well end--> */}
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-services text-center">
                   <div class="services-img">
                     <img src={s3} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i class="flaticon-factory-1"></i>
+                        <i class="flaticon-desert"></i>
                       </a>
                     </div>
                   </div>
@@ -98,13 +98,13 @@ function Services() {
                 </div>
               </div>
               {/* <!-- single-well end--> */}
-              <div class="col-md-4 col-sm-6 col-xs-12"> 
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"> 
                 <div class="single-services text-center">
                   <div class="services-img">
                     <img src={s4} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i class="flaticon-warehouse"></i>
+                        <i className="flaticon-warehouse"></i>
                       </a>
                     </div>
                   </div>
@@ -122,7 +122,7 @@ function Services() {
                 </div>
               </div>
               {/* <!-- single-well end--> */}
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-services text-center">
                   <div class="services-img">
                     <img src={s5} alt="" />
@@ -146,13 +146,13 @@ function Services() {
                 </div>
               </div>
               {/* <!-- single-well end--> */}
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-services text-center">
                   <div class="services-img">
                     <img src={s6} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i class="flaticon-tanks-1"></i>
+                        <i className="flaticon-tanks-1"></i>
                       </a>
                     </div>
                   </div>

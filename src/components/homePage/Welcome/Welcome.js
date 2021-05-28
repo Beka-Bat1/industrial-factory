@@ -12,7 +12,7 @@ function Welcome() {
                 <div class="well-services">
                   <div class="well-icon">
                     <a href="#">
-                      <i class="flaticon-gear-3"></i>
+                      <i class="flaticon-block"></i>
                     </a>
                   </div>
                   <div class="well-content">
@@ -35,7 +35,7 @@ function Welcome() {
                 <div class="well-services">
                   <div class="well-icon">
                     <a href="#">
-                      <i class="flaticon-industrial-robot"></i>
+                      <i class="flaticon-desert"></i>
                     </a>
                   </div>
                   <div class="well-content">
@@ -57,14 +57,14 @@ function Welcome() {
                 <div class="well-services">
                   <div class="well-icon">
                     <a href="#">
-                      <i class="flaticon-factory-1"></i>
+                      <i class="flaticon-truck-1"></i>
                     </a>
                   </div>
                   <div class="well-content">
                     <h4>
                       <a href="#">
-                        სატვირთო მანქანის <br />
-                        მომსახურება
+                        თვითმცლელი სატვირთო <br />
+                        მანქანის მომსახურება
                       </a>
                     </h4>
                     <p>
@@ -79,7 +79,7 @@ function Welcome() {
                 <div class="well-services ">
                   <div class="well-icon">
                     <a href="#">
-                      <i class="flaticon-tanks-1"></i>
+                      <i className="flaticon-digger" style={{fontWeight: "bolder !important"}}></i>
                     </a>
                   </div>
                   <div class="well-content">

@@ -9,8 +9,9 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" component={HomePage} />
-        <Route path="*" component={ErrorPage} />
+        <Route path="/"  exact component={HomePage} />
+        <Route path="/services" component={ErrorPage} />
+        <Route path="*" exact component={ErrorPage} />
       </Switch>
     </Layout>
   );

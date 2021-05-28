@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -92,79 +92,36 @@ function Navbar() {
                     <div className="main-menu">
                       <ul className="nav navbar-nav navbar-right">
                         <li>
-                          <a className="pagess" href="index-2.html">
+                          <Link className="pagess" to="home" pathname="/">
                             მთავარი
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link className="pagess" to="/services">
+                            სერვისები
+                          </Link>
+                        </li>
+                        <li>
+                          <a className="pagess" href="#">
+                            პროდუქცია
                           </a>
+                          <ul className="sub-menu">
+                            <li>
+                              <a href="project-2.html">ბლოკი</a>
+                            </li>
+                            <li>
+                              <a href="project-3.html">პემზის ბლოკი</a>
+                            </li>
+                            <li>
+                              <a href="project-4.html">ინერტული მასალები</a>
+                            </li>
+                          </ul>
                         </li>
                         <li>
                           <a className="pagess" href="#">
                             ჩვენს შესახებ
                           </a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="about.html">ჩვენს შესახებ</a>
-                            </li>
-                            <li>
-                              <a href="team.html">გუნდი</a>
-                            </li>
-                            <li>
-                              <a href="review.html">შეფასება</a>
-                            </li>
-                            <li>
-                              <a href="faq.html">კითხვარი</a>
-                            </li>
-                            <li>
-                              <a href="error.html">შეცდომა</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a className="pagess" href="#">
-                            სერვისები
-                          </a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="services.html">სერვისები</a>
-                            </li>
-                            <li>
-                              <a href="single-service.html">ჩვენ გთავაზობთ</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a className="pagess" href="#">
-                            პროექტები
-                          </a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="project-2.html">Project 2 Column</a>
-                            </li>
-                            <li>
-                              <a href="project-3.html">Project 3 Column</a>
-                            </li>
-                            <li>
-                              <a href="project-4.html">Project 4 Column</a>
-                            </li>
-                            <li>
-                              <a href="single-project.html">Single Project</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a className="pagess" href="#">
-                            ბლოგი
-                          </a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="blog.html">Blog grid</a>
-                            </li>
-                            <li>
-                              <a href="blog-sidebar.html">Blog Sidebar</a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">Blog Details</a>
-                            </li>
-                          </ul>
                         </li>
                         <li>
                           <a href="contact.html">კონტაქტები</a>

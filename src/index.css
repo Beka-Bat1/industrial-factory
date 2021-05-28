@@ -1132,7 +1132,7 @@ div#preloader {
   display: block;
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 30%;
   margin-top: -10px;
 }
 .image-layer a i {
@@ -2004,7 +2004,7 @@ div#preloader {
   letter-spacing: 0.6px;
 }
 .services-all {
-  margin-top: -30px;
+  margin: -30px 0 30px 0;
 }
 .services-all .single-services {
   margin-top: 30px;
@@ -2126,6 +2126,9 @@ div#preloader {
 }
 .well-inner .well-services {
   margin-top: 30px;
+}
+.well-services {
+  overflow: hidden;
 }
 .well-inner {
   margin-top: -30px;
