@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/img/logo/empaLogo.png";
 
-function Navbar() {
+const Navbar = () => {
+
+  
   return (
     <>
       <div id="preloader"></div>
@@ -13,7 +16,7 @@ function Navbar() {
                 <div className="topbar-left">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a>
                         <i className="fa fa-map-marker"></i> სოფელი არალი,
                         ადიგენი 0302
                       </a>
@@ -54,7 +57,7 @@ function Navbar() {
           </div>
         </div>
         {/* <!-- header-area start --> */}
-        <div id="sticker" className="header-area header-area-2 hidden-xs">
+        <div id="sticker" className="header-area header-area-2 hidden-xs stick">
           <div className="container">
             <div className="row">
               {/* <!-- logo start --> */}
@@ -65,36 +68,45 @@ function Navbar() {
                     className="navbar-brand page-scroll sticky-logo"
                     href="index-2.html"
                   >
-                    <img src="img/logo/logo2.png" alt="" />
+                    <div class="sub-headline">
+                      {" "}
+                      <img alt="" />
+                      <h4 class="color">
+                        EMPA 
+                      </h4>
+                    </div>
                   </a>
                 </div>
               </div>
               {/* <!-- logo end --> */}
               <div className="col-md-9 col-sm-9">
-                <div className="header-right-link">
-                  {/* <!-- search option start --> */}
-                  <form action="#">
-                    <div className="search-option">
-                      <input type="text" placeholder="Search..." />
-                      <button className="button" type="submit">
-                        <i className="fa fa-search"></i>
-                      </button>
-                    </div>
-                    <a className="main-search" href="#">
-                      <i className="fa fa-search"></i>
-                    </a>
-                  </form>
-                  {/* <!-- search option end --> */}
-                </div>
                 {/* <!-- mainmenu start --> */}
                 <nav className="navbar navbar-default">
                   <div className="collapse navbar-collapse" id="navbar-example">
                     <div className="main-menu">
                       <ul className="nav navbar-nav navbar-right">
                         <li>
-                          <Link className="pagess" to="home" pathname="/">
+                          <Link className="pagess" to="/">
                             მთავარი
                           </Link>
+                        </li>
+                        <li>
+                          <Link to="/production/block1">პროდუცქცია</Link>
+
+                          <ul className="sub-menu">
+                            <li>
+                              <Link to="/production/block1">ბლოკი</Link>
+                            </li>
+
+                            <li>
+                              <Link to="/production/block2">პემზის ბლოკი</Link>
+                            </li>
+                            <li>
+                              <Link to="/production/inertMaterial">
+                                ინერტული მასალები
+                              </Link>
+                            </li>
+                          </ul>
                         </li>
 
                         <li>
@@ -103,28 +115,19 @@ function Navbar() {
                           </Link>
                         </li>
                         <li>
-                          <a className="pagess" href="#">
-                            პროდუქცია
-                          </a>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="project-2.html">ბლოკი</a>
-                            </li>
-                            <li>
-                              <a href="project-3.html">პემზის ბლოკი</a>
-                            </li>
-                            <li>
-                              <a href="project-4.html">ინერტული მასალები</a>
-                            </li>
-                          </ul>
+                          <Link className="pagess" to="/gallery">
+                            გალერეა
+                          </Link>
                         </li>
                         <li>
-                          <a className="pagess" href="#">
+                          <Link className="pagess" to="/about">
                             ჩვენს შესახებ
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="contact.html">კონტაქტები</a>
+                          <Link className="pagess" to="/contact">
+                            კონტაქტი
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -150,82 +153,50 @@ function Navbar() {
                   <nav id="dropdown">
                     <ul>
                       <li>
-                        <a className="pagess" href="index-2.html">
+                        <Link className="pagess" to="/">
                           მთავარი
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="pagess" href="#">
-                          ჩვენს შესახებ
-                        </a>
+                        <Link to="/production/">პროდუცქცია</Link>
+
                         <ul className="sub-menu">
                           <li>
-                            <a href="about.html">ჩვენს შესახებ</a>
+                            <Link to="/production/block1">ბლოკი</Link>
+                          </li>
+
+                          <li>
+                            <Link to="/production/block2" path="/block-1">
+                              პემზის ბლოკი
+                            </Link>
                           </li>
                           <li>
-                            <a href="team.html">გუნდი</a>
-                          </li>
-                          <li>
-                            <a href="review.html">შეფასება</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">ხშირად დასმული კითხვები</a>
-                          </li>
-                          <li>
-                            <a href="error.html">შეცდომა</a>
+                            <Link to="/production/inertMaterial">
+                              ინერტული მასალები
+                            </Link>
                           </li>
                         </ul>
                       </li>
+
                       <li>
-                        <a className="pagess" href="#">
+                        <Link className="pagess" to="/services">
                           სერვისები
-                        </a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="services.html">ყველა სერვისი</a>
-                          </li>
-                          <li>
-                            <a href="single-service.html">ჩვენ გტავაზობთ</a>
-                          </li>
-                        </ul>
+                        </Link>
                       </li>
                       <li>
-                        <a className="pagess" href="#">
-                          პროექტები
-                        </a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="project-2.html">Project 2 Column</a>
-                          </li>
-                          <li>
-                            <a href="project-3.html">Project 3 Column</a>
-                          </li>
-                          <li>
-                            <a href="project-4.html">Project 4 Column</a>
-                          </li>
-                          <li>
-                            <a href="single-project.html">Single Project</a>
-                          </li>
-                        </ul>
+                        <Link className="pagess" to="/gallery">
+                          გალერეა
+                        </Link>
                       </li>
                       <li>
-                        <a className="pagess" href="#">
-                          ბლოგი
-                        </a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="blog.html">Blog grid</a>
-                          </li>
-                          <li>
-                            <a href="blog-sidebar.html">Blog Sidebar</a>
-                          </li>
-                          <li>
-                            <a href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
+                        <Link className="pagess" to="/about">
+                          ჩვენს შესახებ
+                        </Link>
                       </li>
                       <li>
-                        <a href="contact.html">კონტაქტები</a>
+                        <Link className="pagess" to="/contact">
+                          კონტაქტი
+                        </Link>
                       </li>
                     </ul>
                   </nav>
@@ -239,6 +210,6 @@ function Navbar() {
       {/* <!-- header end --> */}
     </>
   );
-}
+};
 
 export default Navbar;

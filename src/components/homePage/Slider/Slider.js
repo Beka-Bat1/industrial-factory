@@ -20,7 +20,7 @@ function Slider() {
                 <div class="display-table-cell">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12 text-center">
                         {/* <!-- layer 1 --> */}
                         <div class="layer-1-2">
                           <h1 class="title2">

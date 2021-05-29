@@ -460,7 +460,10 @@ div#preloader {
   height: 100%;
 }
 .logo {
-  display: block;
+  display: flex;
+  height: 90px;
+  width: auto;
+  text-align: center;
 }
 .logo a {
   display: inline-block;
@@ -612,7 +615,6 @@ div#preloader {
   border: medium none;
   color: #fff;
   display: inline-block;
-  float: right;
   font-size: 17px;
   line-height: 35px;
   padding: 5px 15px;
@@ -621,7 +623,6 @@ div#preloader {
 .header-right-link a.main-search {
   color: #fff;
   display: inline-block;
-  float: right;
   font-size: 16px;
   line-height: 39px;
   position: relative;
@@ -1374,7 +1375,6 @@ div#preloader {
   position: relative;
   font-size: 40px;
   margin-top: -25px;
-  float: right;
   right: 20px;
 }
 .project-dec {
@@ -1513,7 +1513,7 @@ div#preloader {
 /*  10. Blog Area
 /*----------------------------------------*/
 .blog-grid {
-  margin-top: -30px;
+  margin-top: 14em;
 }
 .blog-image {
   overflow: hidden;
@@ -1557,7 +1557,7 @@ div#preloader {
   font-weight: 700;
 }
 .blog-title {
-  margin-top: -5px;
+  margin-top: 2em;
 }
 .single-blog:hover .image-scale {
   transform: scale(1);
@@ -1777,7 +1777,6 @@ div#preloader {
   font-size: 20px;
   background: #fff;
   border-radius: 5px;
-  float: right;
   margin: 7px 0px;
   font-size: 22px;
   font-weight: 700;
@@ -1799,6 +1798,10 @@ div#preloader {
 .footer-logo {
   margin-bottom: 15px;
 }
+.footer-logo img{
+  height: 150px
+}
+
 .footer-head p {
   color: #ddd;
 }
@@ -1810,7 +1813,6 @@ div#preloader {
   font-weight: 700;
 }
 .footer-services-link ul.footer-list {
-  width: 50%;
   float: left;
 }
 .footer-icons ul li {
@@ -1851,7 +1853,7 @@ div#preloader {
   border-radius: 2px;
 }
 .footer-icons {
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 .suscribe-input input {
   background: transparent;
@@ -1889,11 +1891,12 @@ div#preloader {
 }
 .footer-content {
   display: block;
+  width: auto;
   overflow: hidden;
 }
 .footer-list li a {
   color: #ddd;
-  padding: 3px 0px 3px 20px;
+  padding: 3px 0px 3px 0;
   display: block;
   position: relative;
   font-weight: 500;
@@ -1904,15 +1907,14 @@ div#preloader {
 .footer-list li:last-child a {
   padding-bottom: 0px;
 }
-.footer-list li a::after {
+/* .footer-list li a::after {
   position: absolute;
-  content: "\e87a";
   right: auto;
   top: 2px;
   font-family: tionscal;
   font-size: 12px;
   left: 0;
-}
+} */
 .footer-list li a:hover {
   color: #fd5f16;
 }
@@ -2683,7 +2685,6 @@ page-team-member {
   padding: 10px 40px;
   transition: 0.4s;
   width: auto;
-  float: left;
   text-transform: uppercase;
   border-radius: 2px;
   font-weight: 700;
@@ -2768,13 +2769,11 @@ page-team-member {
 }
 .post-img {
   display: inline-block;
-  float: left;
   padding-right: 10px;
   width: 35%;
 }
 .pst-content {
   display: inline-block;
-  float: left;
   width: 65%;
   padding-left: 10px;
 }
@@ -2782,8 +2781,7 @@ page-team-member {
 .left-blog ul li a:hover {
   color: #fd5f16;
 }
-.left-blog-page {
-}
+
 .pst-content p a {
   color: #444;
   font-size: 15px;
@@ -2863,7 +2861,6 @@ blockquote p {
 }
 .author-avatar {
   display: inline-block;
-  float: left;
   width: 10%;
 }
 .author-description h2 {
@@ -2877,8 +2874,7 @@ blockquote p {
 .comments-content-wrap span b {
   margin-right: 5px;
 }
-.comments-content-wrap span a:hover {
-}
+
 span.post-time {
   margin-right: 5px;
 }
@@ -3254,6 +3250,9 @@ span.email-notes {
 }
 .single-services-page .marker-list li {
   color: #666;
+}
+.single-services-page {
+  margin-top: 14em;
 }
 .mar-row .single-well {
   margin-top: 0px;
