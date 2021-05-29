@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-
+import React, { useState, useEffect } from "react";
 
 const ContactPage = () => {
   const [inputName, setInputName] = useState("");
@@ -8,43 +6,30 @@ const ContactPage = () => {
   const [inputPhone, setInputPhone] = useState("");
   const [inputText, setInputText] = useState("");
 
+  useEffect(() => {
+    window.scrollTo(0, 150);
+  }, []);
+
   const saveInput = (e) => {
     e.preventDefault();
-    console.log(e.target);
-
     const serviceID = "default_service";
     const templateID = "template_f5ms1hv";
-    const userID = process.env.REACT_APP_USERID;
-    console.log(userID)
 
-    window.emailjs.sendForm(serviceID, templateID, e.target, userID ).then(
-      () => {
-        alert("Sent!");
-      },
-      (err) => {
-        alert(JSON.stringify(err));
-      }
-    );
-
-    // let dataToSend = {};
-    // dataToSend[inputName] = inputName;
-    // dataToSend[inputEmail] = inputEmail;
-    // dataToSend[inputPhone] = inputPhone;
-    // dataToSend[inputText] = inputText;
-
-    // setTimeout(() => {
-    //   try {
-    //     alert(dataToSend.json);
-    //     console.log(dataToSend);
-    //   } catch {
-    //     console.error("error");
-    //   }
-    // }, 3000);
+    window.emailjs
+      .sendForm(serviceID, templateID, e.target, process.env.REACT_APP_USERID)
+      .then(
+        () => {
+          alert("Sent!");
+        },
+        (err) => {
+          alert(JSON.stringify(err));
+        }
+      );
   };
 
   return (
     <>
-      {/* //   <!-- Start contact Area --> */}
+      {/*   <!-- Start contact Area --> */}
       <div class="container area-padding">
         <div class="row">
           {/* <!-- Start contact icon column --> */}

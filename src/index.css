@@ -1032,14 +1032,7 @@ div#preloader {
 .about-image img {
   border-radius: 10px;
 }
-.video-inner {
-  background: url(./assets/img/about/vd.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  border-radius: 6px;
-}
+
 .video-inner::after {
   position: absolute;
   left: 0;

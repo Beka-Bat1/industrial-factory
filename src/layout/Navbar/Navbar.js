@@ -40,15 +40,15 @@ const Navbar = () => {
               </div>
               <div className="col-md-2 col-sm-3">
                 <div className="quote-button">
-                  <a
-                    href="contact.html"
+                  <Link
+                    to="contact"
                     className="quote-btn"
                     title="Quick view"
                     data-toggle="modal"
                     data-target="#quoteModal"
                   >
                     მოგვწერეთ
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputPhone, setInputPhone] = useState("");
+  const [inputText, setInputText] = useState("");
+
+  const saveInput = (e) => {
+    e.preventDefault();
+    const serviceID = "default_service";
+    const templateID = "template_f5ms1hv";
+
+    window.emailjs
+      .sendForm(serviceID, templateID, e.target, process.env.REACT_APP_USERID)
+      .then(
+        () => {
+          alert("Sent!");
+        },
+        (err) => {
+          alert(JSON.stringify(err));
+        }
+      );
+  };
+
   return (
     <>
       {/* <!-- Start Overview --> */}
@@ -139,48 +161,61 @@ function Contact() {
                   <div className="row">
                     <form
                       id="contactForm"
-                      method="POST"
-                      action="http://rockstheme.com/rocks/tionscal-previews/contact.php"
+                      onSubmit={(e) => saveInput(e)}
                       className="contact-form"
                     >
                       <div className="col-md-12 col-sm-12 col-xs-12">
+                      <input type="hidden" name="contact_number" />
+
                         <input
                           type="text"
                           id="name"
+                          name="user_name"
                           className="form-control"
-                          placeholder="Name"
+                          placeholder="სახელი"
                           required
-                          data-error="Please enter your name"
-                        />
+                          required
+                        data-error="შეიყვანეთ სახელი"
+                        value={inputName}
+                        onChange={(e) => setInputName(e.target.value)}                        />
                         <div className="help-block with-errors"></div>
                         <input
-                          type="email"
-                          className="email form-control"
-                          id="email"
-                          placeholder="Email"
-                          required
-                          data-error="Please enter your email"
-                        />
+                        type="email"
+                        class="email form-control"
+                        id="email"
+                        name="user_mail"
+                        placeholder="ელ. ფოსტა"
+                        required
+                        data-error="შეიყვანეთ მეილი"
+                        value={inputEmail}
+                        onChange={(e) => setInputEmail(e.target.value)}
+                      />
                         <div className="help-block with-errors"></div>
                         <input
-                          type="text"
-                          id="msg_subject"
-                          className="form-control last-part"
-                          placeholder="Subject"
-                          required
-                          data-error="Please enter your message subject"
-                        />
+                        type="text"
+                        id="tel_number"
+                        name="user_phone_number"
+                        class="form-control"
+                        placeholder="მობ. ნომერი"
+                        required
+                        data-error="შეიყვანეთ მობ. ნომერი"
+                        value={inputPhone}
+                        onChange={(e) => setInputPhone(e.target.value)}
+                      />
                         <div className="help-block with-errors last-part"></div>
                       </div>
                       <div className="col-md-12 col-sm-12 col-xs-12">
-                        <textarea
-                          id="message"
-                          rows="7"
-                          placeholder="Massage"
-                          className="form-control"
-                          required
-                          data-error="Write your message"
-                        ></textarea>
+                      <textarea
+                        id="message"
+                        name="user_message"
+                        rows="7"
+                        placeholder="ტექსტი"
+                        class="form-control"
+                        required
+                        data-error="ტექსტი"
+                        value={inputText}
+                        onChange={(e) => setInputText(e.target.value)}
+                      ></textarea>
                         <div className="help-block with-errors"></div>
                         <button type="submit" id="submit" className="quote-btn">
                           გაგზავნა

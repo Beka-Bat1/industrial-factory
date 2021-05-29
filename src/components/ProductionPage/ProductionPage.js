@@ -5,15 +5,16 @@ import s1 from "../../assets/img/service/block_2.jpg";
 import s2 from "../../assets/img/service/block_1.jpg";
 import s3 from "../../assets/img/service/services_7.jpg";
 import s4 from "../../assets/img/service/services_8.jpg";
-import s5 from "../../assets/img/service/services_6.jpg";
-import s6 from "../../assets/img/service/services_3.jpg";
-
+import s5 from "../../assets/img/service/1.jpg";
+import s6 from "../../assets/img/service/2.jpg";
 
 function ProductionPage(props) {
+  /* get params from Router */
   const productType = props.match.params.productName;
-  console.log(productType);
 
-
+  useEffect(() => {
+    window.scrollTo(0,150)
+  }, [])
 
   const products = {
     block1: [

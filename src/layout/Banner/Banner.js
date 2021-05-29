@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -8,14 +9,14 @@ function Banner() {
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="banner-content text-left">
+              <div class="banner-content text-center">
                 <h4>
                   გნებავთ ისარგებლოთ ჩვენი კომპანიის პროფესიონალური სერვისებით?
                 </h4>
                 <div class="banner-contact-btn">
-                  <a class="banner-btn" href="#">
+                  <Link class="banner-btn" to="contact">
                     დაგვიკავშირდით
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

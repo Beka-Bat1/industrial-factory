@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function AboutPage() {
+  useEffect(() => {
+    window.scrollTo(0.15);
+  }, []);
   return (
     <div class="welcome-area area-padding">
       <div class="container">

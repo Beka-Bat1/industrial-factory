@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function ServicesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 150);
+  }, []);
   return (
     <>
       <div class="single-services-page area-padding">
@@ -52,7 +55,8 @@ function ServicesPage() {
                       <h4>ამწე-მანიპულატორი და თვითმცლელი სატვირთო მანქანა</h4>
                     </a>
                     <p>
-                      ჩვენი გამოცდილი ოპერატორები თქვენთვის სასურველ ადგილას მიიტანენ სამშენებლო მასალას
+                      ჩვენი გამოცდილი ოპერატორები თქვენთვის სასურველ ადგილას
+                      მიიტანენ სამშენებლო მასალას
                     </p>
                     <ul class="marker-list">
                       <li>Words is roughly being maintained</li>
@@ -71,13 +75,17 @@ function ServicesPage() {
                     <a href="#">
                       <h4>JCB ექსკავატორის სერვისი</h4>
                     </a>
-                    <p>
-                      JCB ექსკავატორებს წინ ვერაფერი დაუდგებათ!
-                    </p>
+                    <p>JCB ექსკავატორებს წინ ვერაფერი დაუდგებათ!</p>
                     <ul class="marker-list">
                       <li>ბუნება შენსხელშია</li>
-                      <li>ჩვენი ოპერატორებისთვის ხელისშემშლელ ფაქტორს ვერაფერი წარმოადგენს</li>
-                      <li> ენდე ჩვენ ოპერატორებს და დაასრულე პროექტი სასიამოვნოდ</li>
+                      <li>
+                        ჩვენი ოპერატორებისთვის ხელისშემშლელ ფაქტორს ვერაფერი
+                        წარმოადგენს
+                      </li>
+                      <li>
+                        {" "}
+                        ენდე ჩვენ ოპერატორებს და დაასრულე პროექტი სასიამოვნოდ
+                      </li>
                       <li>Maintains the amount of lines</li>
                     </ul>
                   </div>
