@@ -8,6 +8,9 @@ import ProductionPage from "./components/ProductionPage/ProductionPage";
 import AboutPage from "./components/AboutPage/AboutPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 
+import{ init } from 'emailjs-com';
+init(process.env.REACT_APP_USERID);
+
 function App() {
   return (
     <Layout>

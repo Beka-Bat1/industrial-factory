@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+
 const ContactPage = () => {
   const [inputName, setInputName] = useState("");
   const [inputEmail, setInputEmail] = useState("");
@@ -7,22 +9,37 @@ const ContactPage = () => {
   const [inputText, setInputText] = useState("");
 
   const saveInput = (e) => {
-    console.log(inputEmail);
-    let dataToSend = {};
-    dataToSend[inputName] = inputName;
-    dataToSend[inputEmail] = inputEmail;
-    dataToSend[inputPhone] = inputPhone;
-    dataToSend[inputText] = inputText;
+    e.preventDefault();
+    console.log(e.target);
 
-    setTimeout(() => {
-      try {
-        alert(dataToSend.json);
-        console.log(dataToSend)
-      } catch {
-        console.error("error");
+    const serviceID = "default_service";
+    const templateID = "template_f5ms1hv";
+    const userID = process.env.REACT_APP_USERID;
+    console.log(userID)
+
+    window.emailjs.sendForm(serviceID, templateID, e.target, userID ).then(
+      () => {
+        alert("Sent!");
+      },
+      (err) => {
+        alert(JSON.stringify(err));
       }
-    }, 3000);
+    );
 
+    // let dataToSend = {};
+    // dataToSend[inputName] = inputName;
+    // dataToSend[inputEmail] = inputEmail;
+    // dataToSend[inputPhone] = inputPhone;
+    // dataToSend[inputText] = inputText;
+
+    // setTimeout(() => {
+    //   try {
+    //     alert(dataToSend.json);
+    //     console.log(dataToSend);
+    //   } catch {
+    //     console.error("error");
+    //   }
+    // }, 3000);
   };
 
   return (
@@ -82,13 +99,17 @@ const ContactPage = () => {
                 <div class="row">
                   <form onSubmit={(e) => saveInput(e)} class="contact-form">
                     <div class="col-md-6 col-sm-6 col-xs-12">
+                      <input type="hidden" name="contact_number" />
+
                       <input
                         type="text"
                         id="name"
+                        name="user_name"
                         class="form-control"
                         placeholder="სახელი"
                         required
                         data-error="შეიყვანეთ სახელი"
+                        value={inputName}
                         onChange={(e) => setInputName(e.target.value)}
                       />
                       <div class="help-block with-errors"></div>
@@ -98,9 +119,11 @@ const ContactPage = () => {
                         type="email"
                         class="email form-control"
                         id="email"
+                        name="user_mail"
                         placeholder="ელ. ფოსტა"
                         required
                         data-error="შეიყვანეთ მეილი"
+                        value={inputEmail}
                         onChange={(e) => setInputEmail(e.target.value)}
                       />
                       <div class="help-block with-errors"></div>
@@ -109,10 +132,12 @@ const ContactPage = () => {
                       <input
                         type="text"
                         id="tel_number"
+                        name="user_phone_number"
                         class="form-control"
                         placeholder="მობ. ნომერი"
                         required
                         data-error="შეიყვანეთ მობ. ნომერი"
+                        value={inputPhone}
                         onChange={(e) => setInputPhone(e.target.value)}
                       />
                       <div class="help-block with-errors"></div>
@@ -120,11 +145,13 @@ const ContactPage = () => {
                     <div class="col-md-12 col-sm-12 col-xs-12">
                       <textarea
                         id="message"
+                        name="user_message"
                         rows="7"
                         placeholder="ტექსტი"
                         class="form-control"
                         required
                         data-error="ტექსტი"
+                        value={inputText}
                         onChange={(e) => setInputText(e.target.value)}
                       ></textarea>
                       <div class="help-block with-errors"></div>
