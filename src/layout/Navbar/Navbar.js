@@ -60,18 +60,17 @@ const Navbar = () => {
             <div className="row">
               {/* <!-- logo start --> */}
               <div className="col-md-3 col-sm-3">
-                <div className="logo">
+                <div className="logo text-center">
                   {/* <!-- Brand --> */}
-                  <a
-                    className="navbar-brand page-scroll sticky-logo"
-                    href="index-2.html"
-                  >
+                  <Link className="navbar-brand page-scroll sticky-logo" to="/">
                     <div class="sub-headline">
-                      {" "}
-                      <img alt="" />
+                      {/* logo */}
                       <h4 class="color">EMPA</h4>
+                      {/* <span>
+                        <h6>Company</h6>
+                      </span> */}
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- logo end --> */}

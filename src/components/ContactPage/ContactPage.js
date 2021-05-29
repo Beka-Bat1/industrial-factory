@@ -1,14 +1,29 @@
 import React, { useState } from "react";
 
-function ContactPage() {
-  const [inoutValue, setInputValue] = useState("");
+const ContactPage = () => {
+  const [inputName, setInputName] = useState("");
   const [inputEmail, setInputEmail] = useState("");
-
+  const [inputPhone, setInputPhone] = useState("");
+  const [inputText, setInputText] = useState("");
 
   const saveInput = (e) => {
-      e.
-    console.log(inputEmail)
-  }
+    console.log(inputEmail);
+    let dataToSend = {};
+    dataToSend[inputName] = inputName;
+    dataToSend[inputEmail] = inputEmail;
+    dataToSend[inputPhone] = inputPhone;
+    dataToSend[inputText] = inputText;
+
+    setTimeout(() => {
+      try {
+        alert(dataToSend.json);
+        console.log(dataToSend)
+      } catch {
+        console.error("error");
+      }
+    }, 3000);
+
+  };
 
   return (
     <>
@@ -65,11 +80,7 @@ function ContactPage() {
             <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="contact-form">
                 <div class="row">
-                  <form
-                    id="contactForm"
-                    onSubmit={(e) => saveInput(e)}
-                    class="contact-form"
-                  >
+                  <form onSubmit={(e) => saveInput(e)} class="contact-form">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <input
                         type="text"
@@ -78,6 +89,7 @@ function ContactPage() {
                         placeholder="სახელი"
                         required
                         data-error="შეიყვანეთ სახელი"
+                        onChange={(e) => setInputName(e.target.value)}
                       />
                       <div class="help-block with-errors"></div>
                     </div>
@@ -101,6 +113,7 @@ function ContactPage() {
                         placeholder="მობ. ნომერი"
                         required
                         data-error="შეიყვანეთ მობ. ნომერი"
+                        onChange={(e) => setInputPhone(e.target.value)}
                       />
                       <div class="help-block with-errors"></div>
                     </div>
@@ -112,12 +125,13 @@ function ContactPage() {
                         class="form-control"
                         required
                         data-error="ტექსტი"
+                        onChange={(e) => setInputText(e.target.value)}
                       ></textarea>
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                      <button type="submit" id="submit" class="contact-btn">
-                        Submit
+                      <button type="submit" class="contact-btn">
+                        გაგზავნა
                       </button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div>
                       <div class="clearfix"></div>
@@ -132,6 +146,6 @@ function ContactPage() {
       </div>
     </>
   );
-}
+};
 
 export default ContactPage;
