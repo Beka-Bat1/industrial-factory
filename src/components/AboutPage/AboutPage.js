@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function AboutPage() {
   useEffect(() => {
-    window.scrollTo(0.15);
+    window.scrollTo(0, 150);
   }, []);
   return (
     <div class="welcome-area area-padding">

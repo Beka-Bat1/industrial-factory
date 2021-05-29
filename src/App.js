@@ -7,9 +7,7 @@ import GalleryPage from "./components/GalleryPage/GalleryPage";
 import ProductionPage from "./components/ProductionPage/ProductionPage";
 import AboutPage from "./components/AboutPage/AboutPage";
 import ContactPage from "./components/ContactPage/ContactPage";
-
-import{ init } from 'emailjs-com';
-init(process.env.REACT_APP_USERID);
+import CreditsPage from "./components/CreditsPage/CreditsPage";
 
 function App() {
   return (
@@ -22,6 +20,7 @@ function App() {
         <Route path="/about" component={AboutPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/credits" component={CreditsPage} />
 
         <Route path="*" exact component={ErrorPage} />
       </Switch>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo2 from "../../assets/img/logo/empaLogo.png";
 
 function Footer() {
@@ -71,7 +72,6 @@ function Footer() {
                     {/* icons */}
                   </div>
                 </div>
-                
               </div>
               {/* <!-- end single footer --> */}
               <div class="col-md-8 col-sm-7 col-xs-12">
@@ -110,9 +110,7 @@ function Footer() {
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="copyright">
                   <p class="text-right">
-                    <a target="_blank" href="https://www.templateshub.net">
-                      Credits
-                    </a>
+                    <Link to="credits">Credits</Link>
                   </p>
                 </div>
               </div>
