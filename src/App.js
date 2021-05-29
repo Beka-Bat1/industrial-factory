@@ -5,6 +5,8 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import ServicesPage from "./components/ServisesPage/ServicesPage";
 import GalleryPage from "./components/GalleryPage/GalleryPage";
 import ProductionPage from "./components/ProductionPage/ProductionPage";
+import AboutPage from "./components/AboutPage/AboutPage";
+import ContactPage from "./components/ContactPage/ContactPage";
 
 function App() {
   return (
@@ -14,6 +16,10 @@ function App() {
         <Route path="/services" component={ServicesPage} />
         <Route path="/gallery" component={GalleryPage} />
         <Route path="/production/:productName" component={ProductionPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
+
         <Route path="*" exact component={ErrorPage} />
       </Switch>
     </Layout>

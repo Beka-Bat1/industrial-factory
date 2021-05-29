@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo/empaLogo.png";
 
 const Navbar = () => {
-
-  
   return (
     <>
       <div id="preloader"></div>
@@ -71,9 +69,7 @@ const Navbar = () => {
                     <div class="sub-headline">
                       {" "}
                       <img alt="" />
-                      <h4 class="color">
-                        EMPA 
-                      </h4>
+                      <h4 class="color">EMPA</h4>
                     </div>
                   </a>
                 </div>

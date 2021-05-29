@@ -23,6 +23,21 @@ function Footer() {
                       მძიმე ტექნიკით მომსახურებას.
                     </p>
 
+                    <div class="footer-icons">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                     <div class="footer-head">
                       <h4>საკონტაქტო</h4>
                       <div class="footer-services-link">
@@ -40,7 +55,7 @@ function Footer() {
                             </a>
                           </li>
                           <li>
-                            <a  >
+                            <a>
                               <i className="fa fa-envelope"></i>{" "}
                               info@empacompany.ge
                             </a>
@@ -56,21 +71,7 @@ function Footer() {
                     {/* icons */}
                   </div>
                 </div>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-facebook"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-google"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                
               </div>
               {/* <!-- end single footer --> */}
               <div class="col-md-8 col-sm-7 col-xs-12">

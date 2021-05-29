@@ -140,7 +140,7 @@ a:focus {
 body {
   background: #fff none repeat scroll 0 0;
   color: #777;
-  font-family: "Open Sans", sans-serif;
+  font-family: "BPG Arial Caps", sans-serif !important;
   font-size: 14px;
   text-align: left;
   overflow-x: hidden;
@@ -200,7 +200,7 @@ div#preloader {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("./assets/img/logo/logo.png") no-repeat center center;
+  background: #fff 50% / 50% 50% url("./assets/img/logo/empaLogo.png") no-repeat ;
 }
 .navbar-collapse {
   padding-left: 0px;
@@ -224,7 +224,7 @@ div#preloader {
   padding: 0.2em 0;
 }
 .area-padding {
-  padding: 90px 0px;
+  padding: 18em 0px;
 }
 .area-padding-2 {
   padding: 70px 0px 50px;
@@ -406,8 +406,8 @@ div#preloader {
 }
 .quote-button .quote-btn {
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
   background: #fd5f16;
   display: inline-block;
@@ -477,11 +477,10 @@ div#preloader {
 .main-menu ul.navbar-nav > li > a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   color: #444;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
   padding: 40px 0px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "BPG Arial Caps", sans-serif;
   margin: 0px 15px;
 }
 .main-menu ul.navbar-nav li a:hover {
@@ -566,10 +565,10 @@ div#preloader {
   color: #444;
   display: block;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px 15px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "BPG Arial Caps", sans-serif;
 }
 .main-menu ul.nav li:hover ul.sub-menu li a:hover {
   color: #fff;
@@ -781,7 +780,7 @@ div#preloader {
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 12px 20px;
   text-align: center;
   text-transform: uppercase;
@@ -1815,8 +1814,12 @@ div#preloader {
 .footer-services-link ul.footer-list {
   float: left;
 }
+.footer-services-link ul.footer-list i {
+  padding-right: 10px;
+}
 .footer-icons ul li {
   display: inline-block;
+  margin: 0 5px
 }
 .footer-icons ul li a {
   color: #ddd;
@@ -2675,6 +2678,9 @@ page-team-member {
   padding: 20px;
   width: 100%;
 }
+.contact-page{
+  padding-bottom: 5em ;
+}
 .contact-page .contact-btn {
   background: #fd5f16;
   border: 2px solid #fd5f16;
@@ -2697,6 +2703,10 @@ page-team-member {
 }
 .map-area {
   padding-top: 90px;
+}
+.map-main{
+  display: flex;
+  justify-content: center;
 }
 /*----------------------------------------
    26. Blog Details page
