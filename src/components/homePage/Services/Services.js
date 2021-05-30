@@ -100,7 +100,7 @@ function Services() {
                     <div class="image-layer">
                       <a href="#">
                         <i
-                          className=".flaticon-desert
+                          className="flaticon-desert
 "
                         ></i>
                       </a>
@@ -124,7 +124,7 @@ function Services() {
                     <img src={s5} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i class=".flaticon-truck-1"></i>
+                        <i class="flaticon-truck-1"></i>
                       </a>
                     </div>
                   </div>
@@ -146,7 +146,7 @@ function Services() {
                     <img src={s6} alt="" />
                     <div class="image-layer">
                       <a href="#">
-                        <i className=".flaticon-digger"></i>
+                        <i className="flaticon-digger"></i>
                       </a>
                     </div>
                   </div>
