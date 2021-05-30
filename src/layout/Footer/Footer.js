@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo2 from "../../assets/img/logo/empaLogo.png";
+import logo2 from "../../assets/img/logo/empaLogo.jpg";
 
 function Footer() {
   return (
@@ -14,9 +14,9 @@ function Footer() {
                 <div class="footer-content">
                   <div class="footer-head">
                     <div class="footer-logo">
-                      <a href="#">
+                      <Link to="/">
                         <img src={logo2} alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <p>
                       “ემპა კომპანი", ევროპული სტანდარტების სამშენებლო

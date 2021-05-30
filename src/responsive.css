@@ -17,9 +17,10 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
   .logo a {
-    display: inline-block;
+    display: flex;
     height: auto;
     padding: 21px 0;
+    align-items: center;
   }
   .header-area.stick .main-menu ul.navbar-nav li a {
     padding: 28px 0px;

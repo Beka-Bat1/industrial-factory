@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo/empaLogo.png";
+import logo from "../../assets/img/logo/empaLogo.jpg";
 
 const Navbar = () => {
   return (
@@ -63,12 +63,14 @@ const Navbar = () => {
                 <div className="logo text-center">
                   {/* <!-- Brand --> */}
                   <Link className="navbar-brand page-scroll sticky-logo" to="/">
-                    <div class="sub-headline">
-                      {/* logo */}
-                      <h4 class="color">EMPA</h4>
-                      {/* <span>
+                    {/* logo */}
+
+                    <img src={logo} alt="logo" className="" />
+                    {/* <span>
                         <h6>Company</h6>
                       </span> */}
+                    <div class="sub-headline">
+                      <h4 class="color">EMPA</h4>
                     </div>
                   </Link>
                 </div>
