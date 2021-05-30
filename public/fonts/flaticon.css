@@ -7,16 +7,10 @@
       format("woff"),
     url("../fonts/flaticon.woff2?9b18e2933631528b308c83b16ee50903")
       format("woff2"),
-    url("../fonts/flaticon.eot?9b18e2933631528b308c83b16ee50903#iefix")
-      format("embedded-opentype"),
-    url("../fonts/flaticon.svg?9b18e2933631528b308c83b16ee50903#flaticon")
-      format("svg"),
-    url("../fonts/Flaticon.eot"),
-    url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Flaticon.woff") format("woff"),
-    url("webfont.woff2") format("woff2"),
     url("../fonts/Flaticon.ttf") format("truetype"),
-    url("../fonts/Flaticon.svg#flaticon") format("svg");
+    /* ttf saved my life!  */
+     url("../fonts/Flaticon.svg#flaticon")format("svg");
 }
 
 i[class^="flaticon-"]:before,
