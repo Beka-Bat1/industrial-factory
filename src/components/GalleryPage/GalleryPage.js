@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
-import s1 from "../../assets/img/service/block_2.jpg";
-import s2 from "../../assets/img/service/block_1.jpg";
-import s3 from "../../assets/img/service/5.jpg";
-import s4 from "../../assets/img/service/3.jpg";
-import s5 from "../../assets/img/service/4.jpg";
-import s6 from "../../assets/img/service/2.jpg";
+import s1 from "../../assets/img/g1.jpg";
+import s2 from "../../assets/img/g2.jpg";
+import s3 from "../../assets/img/g3.jpg";
+import s4 from "../../assets/img/g4.jpg";
+import s5 from "../../assets/img/g5.jpg";
+import s6 from "../../assets/img/g6.jpg";
 import GalleryItem from "./GalleryItem/GalleryItem";
 
 function GalleryPage() {

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import s6 from "../../../assets/img/slider/s6.jpg";
-import s5 from "../../../assets/img/slider/s5.jpg";
+import s6 from "../../../assets/img/s2-min.jpg";
+import s5 from "../../../assets/img/s1-min.jpg";
 
 function Slider() {
   return (
@@ -13,7 +13,7 @@ function Slider() {
         <div class="intro-carousel">
           <div class="intro-content">
             <div class="slider-images">
-              <img src={s5} alt="" />
+              <img src={s5} srcset={s5 + " 2x"} alt="" width="1420" />
             </div>
             <div class="slider-content">
               <div class="display-table">

@@ -200,7 +200,7 @@ div#preloader {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff 50% / 50% 50% url("./assets/img/logo/empa-logo-titled.svg")
+  background: #fff center / 50% 50% url("./assets/img/empa-logo-titled.svg")
     no-repeat;
 }
 .navbar-collapse {
@@ -1262,7 +1262,7 @@ div#preloader {
 /* 7.Counter Area
 /*----------------------------------------*/
 .counter-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/background/bg1.jpg) no-repeat
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
     scroll bottom center / cover;
 }
 .counter-inner {
@@ -1454,7 +1454,7 @@ div#preloader {
 /*  9. Testimonials Area
 /*----------------------------------------*/
 .testimonial-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/background/bg1.jpg) no-repeat
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
     scroll bottom center / cover;
 }
 .single-testi {
@@ -1607,7 +1607,7 @@ div#preloader {
 /*  11. Quote  Area
 /*----------------------------------------*/
 .contact-quote-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/background/bg1.jpg) no-repeat
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
     scroll bottom center / cover;
 }
 .quote-details {
@@ -2013,7 +2013,7 @@ div#preloader {
 /*  15.Overview  Area
 /*----------------------------------------*/
 .overview-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/background/bg1.jpg) no-repeat
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
     scroll center center / cover;
 }
 .parallax-bg {
@@ -2474,7 +2474,7 @@ page-team-member {
   position: relative;
 }
 .page-area {
-  background: url(./assets/img/background/b.jpg);
+  background: url(./assets/img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;

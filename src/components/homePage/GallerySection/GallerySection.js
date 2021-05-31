@@ -1,11 +1,11 @@
 import React from "react";
 
-import p6 from "../../../assets/img/service/1.jpg";
-import p5 from "../../../assets/img/service/2.jpg";
-import p4 from "../../../assets/img/service/3.jpg";
-import p3 from "../../../assets/img/service/4.jpg";
-import p2 from "../../../assets/img/service/5.jpg";
-import p1 from "../../../assets/img/service/6.jpg";
+import p6 from "../../../assets/img/g1.jpg";
+import p5 from "../../../assets/img/g2.jpg";
+import p4 from "../../../assets/img/g3.jpg";
+import p3 from "../../../assets/img/g4.jpg";
+import p2 from "../../../assets/img/g5.jpg";
+import p1 from "../../../assets/img/g6.jpg";
 import SingleGalleryItem from "./SingleGalleryItem/SingleGalleryItem";
 
 function GallerySection() {

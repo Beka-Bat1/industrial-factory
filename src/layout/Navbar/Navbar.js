@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo/empaLogo.jpg";
+import logo from "../../assets/img/empaLogo.jpg";
 
 const Navbar = () => {
   return (

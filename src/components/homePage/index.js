@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Banner from "../../layout/Banner/Banner";
 import Contact from "./Contact/Contact";
 import GallerySection from "./GallerySection/GallerySection";
 import Services from "./Services/Services";
@@ -8,8 +7,8 @@ import Welcome from "./Welcome/Welcome";
 
 function HomePage() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Slider />

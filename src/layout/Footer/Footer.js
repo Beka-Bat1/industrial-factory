@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo2 from "../../assets/img/logo/empaLogo.jpg";
+import logo2 from "../../assets/img/empaLogo.jpg";
 
 function Footer() {
   return (
