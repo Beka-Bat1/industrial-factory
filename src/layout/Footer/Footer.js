@@ -82,7 +82,7 @@ function Footer() {
                   <div className="map-responsive">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5124.112784480428!2d42.83751834675094!3d41.64431602258112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4042cf7da7ebbea9%3A0x81d6c1c4718001fd!2z4YOh4YOQ4YOb4YOo4YOU4YOc4YOU4YOR4YOa4YOdIOGDkeGDmuGDneGDmeGDmOGDoSDhg6Xhg5Dhg6Dhg67hg5Dhg5zhg5A!5e0!3m2!1sen!2sge!4v1622293195921!5m2!1sen!2sge"
-                      width="750px"
+                      width="700"
                       height="450"
                       style={{ border: "0" }}
                       allowfullscreen=""
