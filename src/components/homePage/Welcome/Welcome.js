@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -11,17 +12,16 @@ function Welcome() {
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="well-services">
                   <div class="well-icon">
-                    <a href="#">
+                    <Link to="/production/block1">
                       <i class="flaticon-block"></i>
-                    </a>
+                    </Link>
                   </div>
                   <div class="well-content">
                     <h4>
-                      <a href="#">
+                      <Link to="/production/block1">
                         ევროპული სტანდარტის <br />
                         ბლოკი
-                        
-                      </a>
+                      </Link>
                     </h4>
                     <p>
                       Aspernatur sit adipisci quaerat unde at neque Redug Lagre
@@ -34,16 +34,16 @@ function Welcome() {
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="well-services">
                   <div class="well-icon">
-                    <a href="#">
+                    <Link to="/production/block1">
                       <i class="flaticon-desert"></i>
-                    </a>
+                    </Link>
                   </div>
                   <div class="well-content">
                     <h4>
-                      <a href="#">
-                        მიწახრეში  <br />
-                        
-                      </a>
+                      <Link to="/production/inertMaterial">
+                        მიწახრეში, <br />
+                        ხრეში, ღორღი
+                      </Link>
                     </h4>
                     <p>
                       Aspernatur sit adipisci quaerat unde at neque Redug Lagre
@@ -56,9 +56,9 @@ function Welcome() {
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="well-services">
                   <div class="well-icon">
-                    <a href="#">
+                    <Link to="/services">
                       <i class="flaticon-truck-1"></i>
-                    </a>
+                    </Link>
                   </div>
                   <div class="well-content">
                     <h4>
@@ -79,7 +79,10 @@ function Welcome() {
                 <div class="well-services ">
                   <div class="well-icon">
                     <a href="#">
-                      <i className="flaticon-digger" style={{fontWeight: "bolder !important"}}></i>
+                      <i
+                        className="flaticon-digger"
+                        style={{ fontWeight: "bolder !important" }}
+                      ></i>
                     </a>
                   </div>
                   <div class="well-content">

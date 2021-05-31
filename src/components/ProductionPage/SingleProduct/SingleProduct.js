@@ -6,13 +6,13 @@ function SingleProduct(props) {
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="single-blog">
           <div class="blog-image">
-            <a class="image-scale" href="#">
-              <img src={props.productImage} alt="" />
+            <a class="image-scale">
+              <img src={props.productImage} alt="" width="400" height="300" />
             </a>
           </div>
           <div class="blog-content">
             <div class="blog-title">
-              <a href="#">
+              <a>
                 <h4>{props.productHeader}</h4>
               </a>
             </div>
