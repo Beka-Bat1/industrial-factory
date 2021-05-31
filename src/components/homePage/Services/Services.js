@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import s1 from "../../../assets/img/g1.jpg";
 import s2 from "../../../assets/img/g2.jpg";
@@ -32,18 +33,18 @@ function Services() {
                   <div class="services-img">
                     <img src={s1} alt="" />
                     <div class="image-layer">
-                      <a href="#">
+                      <Link to="/prodcution/block1">
                         <i class="flaticon-brick"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div class="main-services">
                     <div class="service-content">
                       <h4>ბლოკი</h4>
                       <p>უმაღლესი ხარისხის ბლოკი</p>
-                      <a class="service-btn" href="#">
+                      <Link class="service-btn" to="/production/block1">
                         გაიგე მეტი
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -54,18 +55,18 @@ function Services() {
                   <div class="services-img">
                     <img src={s2} alt="" />
                     <div class="image-layer">
-                      <a href="#">
+                      <Link to="production/block2">
                         <i class="flaticon-brick"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div class="main-services">
                     <div class="service-content">
                       <h4>პერლიტის ბლოკი</h4>
                       <p>უმაღლესი ხარისხის ბლოკი</p>
-                      <a class="service-btn" href="#">
+                      <Link class="service-btn" to="/production/block2">
                         გაიგე მეტი
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -76,18 +77,18 @@ function Services() {
                   <div class="services-img">
                     <img src={s3} alt="" />
                     <div class="image-layer">
-                      <a href="#">
+                      <Link to="/production/inertMaterial">
                         <i class="flaticon-desert"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div class="main-services">
                     <div class="service-content">
                       <h4> ქვიშახრეში 040 </h4>
                       <p>მაღალი ხარისხით დამზადებული ქვიშახრეში.</p>
-                      <a class="service-btn" href="#">
+                      <Link class="service-btn" to="inertMaterial">
                         გაიგე მეტი
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -98,21 +99,21 @@ function Services() {
                   <div class="services-img">
                     <img src={s4} alt="" />
                     <div class="image-layer">
-                      <a href="#">
+                      <Link to="/prodcution/inertMaterial">
                         <i
                           className="flaticon-desert
 "
                         ></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div class="main-services">
                     <div class="service-content">
                       <h4>ინერტული მასალები</h4>
                       <p>თქვენ პროექტზე მორგებული მასალები.</p>
-                      <a class="service-btn" href="#">
-                        read more
-                      </a>
+                      <Link to="/production/inertMaterial" class="service-btn">
+                        გაიგე მეტი
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -123,18 +124,18 @@ function Services() {
                   <div class="services-img">
                     <img src={s5} alt="" />
                     <div class="image-layer">
-                      <a href="#">
+                      <Link to="/services">
                         <i class="flaticon-truck-1"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div class="main-services">
                     <div class="service-content">
                       <h4>თვითმცლელი</h4>
                       <p>თვითმცლელის სერვისი.</p>
-                      <a class="service-btn" href="#">
+                      <Link class="service-btn" to="/services">
                         გაიგე მეტი
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -145,9 +146,9 @@ function Services() {
                   <div class="services-img">
                     <img src={s6} alt="" />
                     <div class="image-layer">
-                      <a href="#">
+                      <Link to="/services">
                         <i className="flaticon-digger"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div class="main-services">
@@ -157,9 +158,9 @@ function Services() {
                         მძიმე ტექნიკით მომსახურება, JCB ექსკავატორი გამოცდილი
                         ოპერატორით.
                       </p>
-                      <a class="service-btn" href="#">
+                      <Link class="service-btn" to="/services">
                         გაიგე მეტი
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

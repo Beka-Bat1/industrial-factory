@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/empaLogo.jpg";
+import logo from "../../assets/img/empaLogo.svg";
 
 const Navbar = () => {
   return (
@@ -25,7 +25,7 @@ const Navbar = () => {
                         08:00 - 20:00
                       </a>
                     </li>
-                    <li>
+                    <li className="hidden-sm">
                       <a href="#">
                         <i className="fa fa-envelope"></i> info@empacompany.ge
                       </a>

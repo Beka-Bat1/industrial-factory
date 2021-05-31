@@ -1,4 +1,32 @@
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
+  .logo{
+    height: 100px;
+  }
+  .logo a {
+    display: flex;
+    height: auto;
+    padding: 21px 0;
+    align-items: center;
+  }
+  .navbar-brand .sub-headline {
+    margin: 10px auto !important;
+  }
+  .navbar-brand .page-scroll .sticky-logo {
+    display: flex !important;
+    height: inherit !important;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+  .logo a .sub-headline h4 {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .header-area .logo a {
+    display: flex !important;
+    height: inherit !important;
+    padding: 0px !important;
+  }
+
   .quote-details {
     padding: 12% 30% 12% 10%;
   }
@@ -85,6 +113,21 @@
 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  .logo{
+    height: 80px;
+  }
+  .logo a {
+    display: flex;
+    height: auto;
+    padding: 19px 0;
+    align-items: center;
+  }
+  a .sub-headline h4{
+    font-size: 18px;
+  }
+  .logo img{
+    height: 80px;
+  }
   .header-area .main-menu ul.navbar-nav > li > a {
     font-size: 12px;
     margin: 0px 6px;
@@ -113,9 +156,7 @@
   .quote-button .quote-btn {
     padding: 14px 10px;
   }
-  .logo a {
-    padding: 19px 0;
-  }
+ 
   .logo-bg:after {
     border-top: 81px solid transparent;
   }
@@ -339,9 +380,7 @@
     z-index: 999999;
     max-width: 130px;
   }
-  .logo a {
-    padding: 0px;
-  }
+  
   .pagess::after {
     display: none;
   }

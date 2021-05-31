@@ -462,11 +462,12 @@ div#preloader {
 }
 .logo {
   display: flex;
-  height: 90px;
+  height: 100px;
 }
 .logo img {
   position: relative;
   height: 90px;
+  filter: brightness(150%);
 }
 .main-menu ul.navbar-nav li {
   float: left;
@@ -645,7 +646,6 @@ div#preloader {
 .header-area.stick .logo a {
   display: flex;
   height: inherit;
-  padding: 20px 0;
 }
 .header-area.stick .main-menu ul.navbar-nav li a {
   padding: 27px 0px;
@@ -670,6 +670,7 @@ div#preloader {
 .header-area.stick .navbar-brand > img {
   width: 90px;
   height: inherit;
+  filter: brightness(160%);
 }
 .navbar-brand .sub-headline {
   margin: 1em auto;
@@ -1091,6 +1092,7 @@ div#preloader {
 .single-services {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  max-height: 450px;
 }
 .main-services {
   display: block;
@@ -1262,8 +1264,8 @@ div#preloader {
 /* 7.Counter Area
 /*----------------------------------------*/
 .counter-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
-    scroll bottom center / cover;
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat scroll bottom
+    center / cover;
 }
 .counter-inner {
   background: #f6f6f6;
@@ -1454,8 +1456,8 @@ div#preloader {
 /*  9. Testimonials Area
 /*----------------------------------------*/
 .testimonial-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
-    scroll bottom center / cover;
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat scroll bottom
+    center / cover;
 }
 .single-testi {
   padding: 30px 20px;
@@ -1607,8 +1609,8 @@ div#preloader {
 /*  11. Quote  Area
 /*----------------------------------------*/
 .contact-quote-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
-    scroll bottom center / cover;
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat scroll bottom
+    center / cover;
 }
 .quote-details {
   padding: 12% 17%;
@@ -1792,8 +1794,20 @@ div#preloader {
   background: #071333;
 }
 
+.footer-logo{
+  display: flex !important;
+  align-items: center;
+}
+
 .footer-logo img {
-  height: 150px;
+  height: 120px;
+  filter: brightness(150%);
+}
+.footer-logo .sub-headline{
+  margin-bottom: 0px !important;
+}
+.footer-logo .sub-headline h3{
+  font-size: 24px !important;
 }
 
 .footer-head p {
@@ -2013,8 +2027,8 @@ div#preloader {
 /*  15.Overview  Area
 /*----------------------------------------*/
 .overview-area {
-  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat
-    scroll center center / cover;
+  background: rgba(0, 0, 0, 0) url(./assets/img/bg1.jpg) no-repeat scroll center
+    center / cover;
 }
 .parallax-bg {
   position: relative;
@@ -2312,6 +2326,9 @@ page-team-member {
   text-transform: capitalize;
   max-width: 800px;
   font-weight: 600;
+}
+.welcome-area{
+  margin-top: 25%;
 }
 .welcome-area-2 .well-services {
   position: relative;

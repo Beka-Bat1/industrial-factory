@@ -5,7 +5,7 @@ function Welcome() {
   return (
     <>
       {/* <!-- Welcome service area start --> */}
-      <div class="welcome-area welcome-area-2 area-padding">
+      <div class="welcome-area-2 area-padding">
         <div class="container">
           <div class="row">
             <div class="well-inner">
@@ -41,14 +41,10 @@ function Welcome() {
                   <div class="well-content">
                     <h4>
                       <Link to="/production/inertMaterial">
-                        მიწახრეში, <br />
-                        ხრეში, ღორღი
+                        მიწახრეში ხრეში <br />
+                        ღორღი
                       </Link>
                     </h4>
-                    <p>
-                      Aspernatur sit adipisci quaerat unde at neque Redug Lagre
-                      dolor sit amet.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -62,15 +58,11 @@ function Welcome() {
                   </div>
                   <div class="well-content">
                     <h4>
-                      <a href="#">
+                      <Link to="/services">
                         თვითმცლელი სატვირთო <br />
                         მანქანის მომსახურება
-                      </a>
+                      </Link>
                     </h4>
-                    <p>
-                      Aspernatur sit adipisci quaerat unde at neque Redug Lagre
-                      dolor sit amet.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -78,24 +70,17 @@ function Welcome() {
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="well-services ">
                   <div class="well-icon">
-                    <a href="#">
-                      <i
-                        className="flaticon-digger"
-                        style={{ fontWeight: "bolder !important" }}
-                      ></i>
-                    </a>
+                    <Link to="/services">
+                      <i className="flaticon-digger"></i>
+                    </Link>
                   </div>
                   <div class="well-content">
                     <h4>
-                      <a href="#">
+                      <Link to="/services">
                         JCB ტრაქტორის
                         <br /> მომსახურება
-                      </a>
+                      </Link>
                     </h4>
-                    <p>
-                      Aspernatur sit adipisci quaerat unde at neque Redug Lagre
-                      dolor sit amet.
-                    </p>
                   </div>
                 </div>
               </div>
