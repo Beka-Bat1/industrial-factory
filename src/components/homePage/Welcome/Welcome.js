@@ -23,10 +23,6 @@ function Welcome() {
                         ბლოკი
                       </Link>
                     </h4>
-                    <p>
-                      Aspernatur sit adipisci quaerat unde at neque Redug Lagre
-                      dolor sit amet.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -41,8 +37,8 @@ function Welcome() {
                   <div class="well-content">
                     <h4>
                       <Link to="/production/inertMaterial">
-                        მიწახრეში ხრეში <br />
-                        ღორღი
+                        ქვიშახრეში  <br />
+                        ხრეში ღორღი
                       </Link>
                     </h4>
                   </div>

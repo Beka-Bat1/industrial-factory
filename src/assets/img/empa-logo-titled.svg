@@ -2,15 +2,21 @@
 <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
+    <defs>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+        </style>
+    </defs>
+
 <style type="text/css">
 	.st0{fill:#666767;}
 	.st1{fill:#884532;}
-	.st2{font-family:'Ailerons-Regular';}
-	.st3{font-size:122.8232px;}
+	<!-- .st2{font-family:'Ailerons-Regular';} -->
+	.st3{font-size:100px;}
 	.st4{letter-spacing:-16.1;}
 	.st5{fill:#999A98;}
 </style>
-<text transform="matrix(1.4908 0 0 1 158.9178 907.2445)" class="st1 st2 st3 st4">EmpaCompany</text>
+<text transform="matrix(1.4908 0 0 1 158.9178 907.2445)" class="st1 st2 st3 st4" font-family="Roboto">Empa Company</text>
 <polygon class="st5" points="701.96,768.17 597.89,792.26 745.12,644.26 846.81,622.38 "/>
 <polygon class="st1" points="412.55,486.08 301.15,511.87 266.76,446.6 378.17,420.81 "/>
 <polygon class="st5" points="537.77,456.6 426.36,482.39 391.98,417.12 503.39,391.33 "/>

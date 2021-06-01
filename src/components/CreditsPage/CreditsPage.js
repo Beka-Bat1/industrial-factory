@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function CreditsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 150);
+  }, []);
   return (
     <div className="container area-padding">
       <div className="row">
-        <div className="col-12">
+        <div className="col-6">
           <h1>Credits to</h1>
 
-          <ul>
-            <li>
+          <ul className="list-group">
+            <li className="list-group-item">
               <div>
                 Icons made by{" "}
                 <a
@@ -85,11 +88,19 @@ function CreditsPage() {
                 </a>
               </div>
             </li>
-            <li>
-                <p>imags from</p> <a href="https://pixabay.com/fi/photos/louhos-kone-sora-hiekka-tausta-4430879/">pixabay</a>
+            <li className="list-group-item">
+              <p>images from</p>{" "}
+              <span>
+                <a href="https://pixabay.com/fi/photos/louhos-kone-sora-hiekka-tausta-4430879/">
+                  pixabay
+                </a>
+              </span>
             </li>
-            <li>
-                <p>Template from</p> <a href="https://www.templateshub.net/">templatehub</a>
+            <li className="list-group-item">
+              <p>Template from</p>{" "}
+              <span>
+                <a href="https://www.templateshub.net/">templatehub</a>
+              </span>
             </li>
           </ul>
         </div>

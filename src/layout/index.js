@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Banner from "./Banner/Banner";
 import Footer from "./Footer/Footer";
 import "./index.css";
 import Navbar from "./Navbar/Navbar";
 
 const Layout = ({ children }) => {
-  useEffect(() => {
-    window.scrollTo(0, 150);
-  }, []);
 
   return (
     <>
